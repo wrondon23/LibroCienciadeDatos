@@ -1,0 +1,20 @@
+---
+title: "Analisis Exploratorio de datos"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(funModeling)
+library(dplyr)
+data(heart_disease)
+
+```
+
+```{r}
+freq(data = heart_disease)
+
+
+```
+
