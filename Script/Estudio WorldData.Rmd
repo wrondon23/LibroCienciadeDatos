@@ -1,0 +1,20 @@
+---
+title: 'Parte 1: Introducción al caso de estudio “World Data”'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Este estudio contiene muchos indicadores sobre el desarrollo mundial. Independientemente del ejemplo de análisis numérico, la idea es proveer una tabla lista para usar para sociólogos, investigadores, etc. interesados en analizar este tipo de datos.
+
+La fuente original de los datos es: http://databank.worldbank.org. Allí encontrarán un diccionario de datos que explica todas las variables.
+
+Primero, tenemos que hacer una limpieza de datos. Vamos a conservar el valor más reciente de cada indicador.
+
+
+Las columnas Series.Name y Series.Code son los indicadores a analizar. Country.Name y Country.Code son los países. Cada fila representa una combinación única de país e indicador. Las columnas restantes, X1990..YR1990. (año 1990),X2000..YR2000. (año 2000), X2007..YR2007. (año 2007), y sucesivamente indican el valor de cada métrica para ese año, cada columna corresponde a un año.
+
+
+
