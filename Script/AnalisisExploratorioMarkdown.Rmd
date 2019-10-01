@@ -15,6 +15,6 @@ data(heart_disease)
 ```{r}
 freq(data = heart_disease)
 
-
+freq(data = heart_disease$age, plot = FALSE, na.rm = TRUE)
 ```
 
